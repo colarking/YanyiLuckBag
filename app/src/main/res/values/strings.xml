@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">颜依的红包</string>
+    <string name="service_bind_success">绑定成功,可以开始了</string>
+    <string name="service_bind_failed">绑定成功,请重试一次</string>
+    <string name="enable_luckbag">启动颜依红包统计服务</string>
+    <string name="key_find_my_bag">查看我的红包记录</string>
+    <string name="yanyi_best">手气最佳</string>
+    <string name="loading">正在加载...</string>
+    <string name="send_msg">Message</string>
+    <string name="del_all">确定要清空数据麽,群花？</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+</resources>

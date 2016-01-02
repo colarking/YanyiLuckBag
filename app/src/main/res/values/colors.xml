@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="text_color_4d">#4d4c4d</color>
+    <color name="msg_divider">#ececec</color>
+    <color name="white">#ffffff</color>
+    <color name="text_normal">#ffffff</color>
+    <color name="text_press">#09e4c7</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_bg_press">#44767979</color>
+    <drawable name="gray">#afd7d9</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="default_load_img">#333333</drawable>
+    <color name="text_color_name_self">#0570f2</color>
+    <color name="text_color_name_normal">#4d4c4d</color>
+    <color name="text_color_inout_ok">#4d4c4d</color>
+    <color name="text_color_inout_bad">#f7030f</color>
+    <color name="text_color_in">#d3347443</color>
+    <color name="text_color_out">#171617</color>
+</resources>

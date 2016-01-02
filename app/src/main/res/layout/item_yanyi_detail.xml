@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.yanyi.luckbag.activity.CountlDetailActivity">
+
+    <TextView
+        android:id="@+id/item_yanyi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxWidth="100dp"
+        android:minWidth="50dp"
+        android:paddingLeft="2dp"
+        android:text="昵称"
+        android:textColor="@color/text_color_4d" />
+
+    <TextView
+        android:id="@+id/item_yanyi_money_inout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:minWidth="50dp"
+        android:singleLine="true"
+        android:text="净收"
+        android:textColor="@color/text_color_4d" />
+
+    <TextView
+        android:id="@+id/item_yanyi_money_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:minWidth="50dp"
+        android:singleLine="true"
+        android:text="已收"
+        android:textColor="@color/text_color_4d" />
+
+    <TextView
+        android:id="@+id/item_yanyi_money_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:minWidth="50dp"
+        android:paddingRight="2dp"
+        android:singleLine="true"
+        android:text="已发"
+
+        android:textColor="@color/text_color_4d" />
+
+</LinearLayout>

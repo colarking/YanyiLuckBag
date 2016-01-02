@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AmayaEmptyView">
+        <attr name="isTextTop" format="boolean" />
+        <attr name="emptyImage" format="reference|integer" />
+        <attr name="emptyText" format="reference|string" />
+        <attr name="emptyTextColor" format="color" />
+    </declare-styleable>
+
+</resources>
