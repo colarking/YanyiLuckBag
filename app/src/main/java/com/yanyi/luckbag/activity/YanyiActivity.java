@@ -14,9 +14,8 @@ import android.widget.Toast;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import com.yanyi.luckbag.R;
+import com.yanyi.luckbag.util.AmayaAnimUtil;
 import com.yanyi.luckbag.util.AmayaConstants;
-import com.yanyi.luckbag.util.AmayaLog;
-import com.yanyi.luckbag.util.AnimUtil;
 
 /**
  * Created by amayababy
@@ -27,7 +26,7 @@ public class YanyiActivity extends AppCompatActivity implements View.OnClickList
 
     private static final String TAG = YanyiActivity.class.getSimpleName();
     private int[] yanyis;
-    private int[] yanyiAnims = new int[]{AnimUtil.START_CENTER, AnimUtil.START_LEFT_BOTTOM, AnimUtil.START_LEFT_TOP, AnimUtil.START_RIGHT_BOTTOM, AnimUtil.START_RIGHT_TOP};
+    private int[] yanyiAnims = new int[]{AmayaAnimUtil.START_CENTER, AmayaAnimUtil.START_LEFT_BOTTOM, AmayaAnimUtil.START_LEFT_TOP, AmayaAnimUtil.START_RIGHT_BOTTOM, AmayaAnimUtil.START_RIGHT_TOP};
     private int yanyiIndex, animIndex;
     private ImageView img;
     private AnimatorListenerAdapter listenerAdapter;
@@ -52,8 +51,6 @@ public class YanyiActivity extends AppCompatActivity implements View.OnClickList
         };
         img = (ImageView) findViewById(R.id.yy_image);
         img.setOnClickListener(this);
-
-//        ((MatrixApplication)MatrixApplication.mContext).initImageLoader();
         MatrixApplication.getImageLoader().displayImage(AmayaConstants.PREFIX_DRAWABLE + yanyis[yanyiIndex++], img);
     }
 
@@ -84,17 +81,16 @@ public class YanyiActivity extends AppCompatActivity implements View.OnClickList
                                 if (hideView) {
                                     MatrixApplication.getImageLoader().loadImage(AmayaConstants.PREFIX_DRAWABLE + yanyis[yanyiIndex++], YanyiActivity.this);
                                     hideView = false;
-                                    AnimUtil.showView(img, yanyiAnims[animIndex++], null);
+                                    AmayaAnimUtil.showView(img, yanyiAnims[animIndex++], null);
                                     if (animIndex == yanyiAnims.length) animIndex = 0;
                                 }
                             }
                         };
                     }
-                    AnimUtil.hideView(img, yanyiAnims[animIndex], android.R.anim.fade_in, false, listenerAdapter);
+                    AmayaAnimUtil.hideView(img, yanyiAnims[animIndex], android.R.anim.fade_in, false, listenerAdapter);
                     if (yanyiIndex == yanyis.length) {
                         yanyiIndex = 0;
                     }
-                    AmayaLog.e(TAG, "onClick()...yanyiIndex=" + yanyiIndex);
                 }
                 break;
             case R.id.yy_start:

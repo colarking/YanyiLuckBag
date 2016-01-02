@@ -81,11 +81,11 @@ public class CountlDetailActivity extends AppCompatActivity implements View.OnCl
         switch (v.getId()) {
             case R.id.count_img:
 //                if(titleLayout.getVisibility() == View.VISIBLE){
-//                    AnimUtil.hideView(titleLayout,AnimUtil.START_RIGHT_TOP,true,null);
-//                    AnimUtil.hideView(listView,AnimUtil.START_RIGHT_TOP,true,null);
+//                    AmayaAnimUtil.hideView(titleLayout,AmayaAnimUtil.START_RIGHT_TOP,true,null);
+//                    AmayaAnimUtil.hideView(listView,AmayaAnimUtil.START_RIGHT_TOP,true,null);
 //                }else{
-//                    AnimUtil.showView(titleLayout,AnimUtil.START_RIGHT_TOP,null);
-//                    AnimUtil.showView(listView,AnimUtil.START_RIGHT_TOP,null);
+//                    AmayaAnimUtil.showView(titleLayout,AmayaAnimUtil.START_RIGHT_TOP,null);
+//                    AmayaAnimUtil.showView(listView,AmayaAnimUtil.START_RIGHT_TOP,null);
 //                }
                 break;
         }

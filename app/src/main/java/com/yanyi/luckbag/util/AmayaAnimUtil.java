@@ -17,7 +17,7 @@ import com.yanyi.luckbag.activity.MatrixApplication;
  * 2015-12-20
  * 下午 6:03
  */
-public class AnimUtil {
+public class AmayaAnimUtil {
     public static final int START_LEFT_TOP = 1;
     public static final int START_LEFT_BOTTOM = 2;
     public static final int START_RIGHT_TOP = 3;
